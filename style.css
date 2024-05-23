@@ -187,13 +187,13 @@ a {
   .btn1 {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     font-family: ubuntu, sans-serif;
     font-size: 1.3rem;
     color: #ffffff;
     background-color: #1a2236;
     border: 1px solid #1a2236;
-    padding: 10px 20px;
+    padding: 10px 0;
     border-radius: 5px;
     cursor: pointer;
     margin: 30px 0 0 0;
@@ -361,5 +361,73 @@ a {
 
   .profile-list {
     font-size: 1.2rem;
+  }
+
+  /* contact-section */
+
+  .form-section {
+    background: #dadada;
+    margin-top: 50px;
+    padding: 20px 0;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .float-container {
+    border: solid 1px #525257;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  .float-container input {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: 0;
+    height: 45px;
+    color: #1a2236;
+    padding-left: 16px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .float-container textarea {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: 0;
+    color: #1a2236;
+    padding-left: 16px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  label {
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 16px) scale(1);
+    transition: all 0.1s ease-in-out;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    margin-top: -12px;
+    margin-left: 16px;
+    color: #7d7c84;
+  }
+
+  .float-container.active label {
+    transform: translate(0, 4px) scale(0.75);
+  }
+
+  textarea:focus,
+  textarea:hover,
+  input:focus,
+  input:hover {
+    border: 1px solid #1a2236;
   }
 }
