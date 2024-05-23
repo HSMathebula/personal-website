@@ -197,6 +197,7 @@ a {
     border-radius: 5px;
     cursor: pointer;
     margin: 30px 0 0 0;
+    gap: 20px;
   }
 
   .big-bg {
@@ -215,6 +216,12 @@ a {
     line-height: 100%;
     color: #1a2236;
     margin: 0 0 20px 0;
+  }
+
+  /* projects-section */
+
+  .projects {
+    padding-bottom: 15px;
   }
 
   .item2, .item3, .item5, .item6, .item8, .item10 {
@@ -267,5 +274,92 @@ a {
 
   .arrow {
     padding-left: 6px;
+  }
+
+  /* about-section */
+
+  .about {
+    font-family: 'ubuntu', sans-serif;
+  }
+
+  .back-groung {
+    position: relative;
+    width: 81vw;
+    height: 280px;
+    padding: 20px 20px;
+    margin-top: 20px;
+  }
+
+  .profile1 {
+    background-color: #1a2236; 
+    color: #dadada;
+  }
+  
+  .profile-bg1 {
+    position: absolute;
+    background-image: url("./images/ic_languages.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    bottom: 0;
+    width: 35vi;
+    height: 35vi;
+  }
+
+  .profile2 {
+    background-color: #840e0e; 
+    color: #dadada;
+  }
+  
+  .profile-bg2 {
+    position: absolute;
+    background-image: url("./images/Group18.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    bottom: 0;
+    width: 35vi;
+    height: 35vi;
+  }
+
+  .profile3 {
+    background-color: #002109; 
+    color: #dadada;
+  }
+  
+  .profile-bg3 {
+    position: absolute;
+    background-image: url("./images/ic_skills.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    bottom: 0;
+    width: 35vi;
+    height: 35vi;
+  }
+
+  .profile4 {
+    background-color: #dadada; 
+  }
+  
+  .profile-bg4 {
+    position: absolute;
+    background-image: url("./images/image_dots_with_teal.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 0;
+    bottom: 0;
+    width: 35vi;
+    height: 35vi;
+    transform: rotateX('180deg');
+  }
+
+  .profile-tittle {
+    padding-top: 20px;
+    font-size: 1.8rem;
+  }
+
+  .profile-list {
+    font-size: 1.2rem;
   }
 }
