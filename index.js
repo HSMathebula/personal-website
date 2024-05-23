@@ -69,22 +69,5 @@ Array.prototype.forEach.call(inputs, (el) => {
 
   el.addEventListener('blur', (event) => {
     localStorage.setItem(dataName, event.target.value);
-    // console.log(localStorage.getItem(dataName));
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  const floatInputs = document.querySelectorAll('.float-input');
-
-  floatInputs.forEach(input => {
-      input.addEventListener('focus', function () {
-          this.nextElementSibling.classList.add('active');
-      });
-
-      input.addEventListener('blur', function () {
-          if (!this.value) {
-              this.nextElementSibling.classList.remove('active');
-          }
-      });
   });
 });
