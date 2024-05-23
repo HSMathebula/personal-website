@@ -45,9 +45,9 @@ function validation() {
     } else if (name.length < 1 || name === undefined) {
       event.preventDefault();
       alert.innerHTML = '* Make sure you fill your name. Form not sent.';
-    } else if (message.length > 50) {
+    } else if (message.length > 250) {
       event.preventDefault();
-      alert.innerHTML = '* exceeded maximum number of caracters (50). Form not sent';
+      alert.innerHTML = '* exceeded maximum number of caracters (250). Form not sent';
     } else {
       form.submit();
     }
@@ -70,5 +70,21 @@ Array.prototype.forEach.call(inputs, (el) => {
   el.addEventListener('blur', (event) => {
     localStorage.setItem(dataName, event.target.value);
     // console.log(localStorage.getItem(dataName));
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const floatInputs = document.querySelectorAll('.float-input');
+
+  floatInputs.forEach(input => {
+      input.addEventListener('focus', function () {
+          this.nextElementSibling.classList.add('active');
+      });
+
+      input.addEventListener('blur', function () {
+          if (!this.value) {
+              this.nextElementSibling.classList.remove('active');
+          }
+      });
   });
 });
