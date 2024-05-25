@@ -50,6 +50,7 @@ a {
     right: 16px;
     z-index: 2;
     mix-blend-mode:color-burn;
+    margin-top: 16px;
   }
     
   .bar {
