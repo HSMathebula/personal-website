@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  margin-left: 0px;
+  margin: 0px;
   overflow-x: hidden;
   font-family: var(--font-primary);
 }
@@ -489,6 +489,7 @@ a {
     opacity: 1;
     visibility: visible;
     background: #fff;
+    max-width: 100vw;
     height: 80px;
     border-radius: 0;
     top: 0;
@@ -575,9 +576,9 @@ a {
 
   .row4 {
     display: flex;
-    align-items: baseline;
     padding-right: 16px;
     position: relative;
+    margin-top: -3px;
   }
 
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10 {
@@ -629,6 +630,10 @@ a {
 
   .item9-img2 {
     width: 25%;
+  }
+
+  .row3 {
+    margin-top: -3px;
   }
 
   .row3-column {
@@ -775,7 +780,7 @@ a {
   }
 
   .float-container input {
-    height: 58.5px;
+    height: 58px;
   }
 
   .float-container textarea {
