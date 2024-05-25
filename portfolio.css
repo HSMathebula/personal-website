@@ -200,3 +200,32 @@ a {
   }
 
 }
+
+@media only screen and (min-width: 768px) {
+  .bg {
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .skills {
+    font-size: 1rem;
+}
+
+  .cta-1 {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 58%;
+    margin: 0 auto;
+  }
+
+  .cta-1 a.see-live {
+    margin-bottom: 0;
+  }
+
+  .cta-1 a {
+    padding: 0;
+  }
+}

@@ -314,9 +314,9 @@ a {
     color: var(--secondary-color);
   }
 
-  .profile1 { background-color: var(--primary-color); }
-  .profile2 { background-color: #840e0e; }
-  .profile3 { background-color: #002109; }
+  .profile1 { background-color: #ff9900; }
+  .profile2 { background-color: #1C528A; }
+  .profile3 { background-color: #a00010; }
   .profile4 { background-color: #fff; color: var(--primary-color); }
 
   .profile-bg1, .profile-bg2, .profile-bg3, .profile-bg4 {
@@ -349,7 +349,7 @@ a {
 
   .form-section {
     position: relative;
-    background: #dadada;
+    background: #fff;
     margin-top: 50px;
     padding: 120px 0 20px 0;
     display: flex;
@@ -357,13 +357,19 @@ a {
     align-items: center;
   }
 
-  .form-container{
-    z-index: 5;
-  }
-
   .header-img {
     position: absolute;
     background-image: url(./images/image_geometry_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 30vi;
+    top: 0;
+  }
+
+  .f-img1 {
+    position: absolute;
+    background-image: url(./images/image-geometry_6.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -377,16 +383,6 @@ a {
     border-radius: 4px;
     position: relative;
     height: 100%;
-  }
-
-  .header-img-form {
-    position: absolute;
-    background-image: url(./images/image_geometry_1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 30vi;
-    top: 0;
   }
 
   .float-container input,
@@ -479,13 +475,12 @@ a {
   }
 }
 
-@media only screen and (min-width: 1010px) {
+@media only screen and (min-width: 950px) {
   .page-padding { width: 100%; }
   .header-img { display: none; }
   .mobile-menu-x, .mobile-menu { display: none; }
   .img-menu-1 { display: none; }
   .img-menu-2 { display: none; }
-  .header-img-form { height: 15vi; }
 
   .nav-list {
     display: flex;
@@ -550,7 +545,7 @@ a {
   }
 
   .projects {
-    padding: 0 0 40px 0;
+    padding: 0 0 80px 0;
   }
 
   .pro-tittle {
@@ -678,17 +673,19 @@ a {
   }
 
   .item2:hover .card-info,
-  .item6:hover .card-info {
+  .item6:hover .card-info,
+  .item10:hover .card-info {
     height: 60%;
-    transition: 0.5s ease;
+  }
+
+  .item10:hover .card-info {
+    height: 75%;
   }
 
   .item3:hover .card-info,
   .item5:hover .card-info,
-  .item8:hover .card-info,
-  .item10:hover .card-info {
+  .item8:hover .card-info {
     height: 85%;
-    transition: 0.5s ease;
   }
 
   .list {
@@ -713,16 +710,111 @@ a {
     margin-top: -25px;
     margin-left: -27px;
   }
+
+  /* about */
+  .about {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .profile-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    padding: 0 60px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .back-groung {
+    width: 26vi;
+    margin-top: 0;
+    height: 280px;
+  }
+
+  .about-btn {
+    width: 100%;
+  }
+
+  .profile-bg1, .profile-bg2, .profile-bg3, .profile-bg4 {
+    width: 10vi;
+    height: 10vi;
+  }
+
+  .profile-tittle {
+    margin-top: 20px;
+  }
+
+  .profile-list {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  /* form */
+  .form-container {
+    width: 55%;
+  }
+
+  .name-email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .fc {
+    width: 50%;
+    height: 60px;
+  }
+
+  .float-container input {
+    height: 58.5px;
+  }
+
+  .float-container textarea {
+    height: 180px;
+  }
+
+  .f-img2 {
+    position: absolute;
+    background-image: url(./images/image-geometry_7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 20vi;
+    left: 78.5%;
+    bottom: 0;
+  }
+
+  .btn1:hover {
+    background: #608383;
+    border: none;
+  }
+
+  .project-button:hover {
+    background: #608383;
+    border: none;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .item3:hover .card-info,
   .item5:hover .card-info,
-  .item8:hover .card-info,
-  .item10:hover .card-info {
-    height: 72%;
+  .item8:hover .card-info {
+    height: 65%;
     transition: 0.5s ease;
   }
+  .item10:hover .card-info {
+    height: 60%;
+  }
+
 
   .card-padding {
     padding-left: 35px;
@@ -730,5 +822,13 @@ a {
 
   .art-row3 {
     margin-top: -30px;
+  }
+
+  .item9-img2 {
+    width: 20%; 
+  }
+
+  .about-container {
+    gap: 60px;
   }
 }
