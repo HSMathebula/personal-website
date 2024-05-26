@@ -1,17 +1,17 @@
 const projects = [
   {
     id: 'card1',
-    title: 'Desert Green Africa',
-    image1: './images/dg.png',
+    title: 'Finzen',
+    image1: './images/projects/finzen.png',
     description1:
       'Desert Green is an Agritech start-up founded on the core-mission of tackling food insecurity challenges in the informal agri-value chain in Africa. We build mobile tech solutions to improve productivity, profits & livelihoods for Africa small-scale farmers & Informal traders while bringing youth back to farming.',
     description2:
       'Co-founded in 2015, formally registered in 2016, by 3 young entrepreneurs from different walks of life with 3 things in common: a rural upbringing, a passion for Agri-tech & a near-impossible vision for a self-sustaining connected Africa.',
-    technologyList: ['Webside Design', 'Development', 'On page SEO'],
+    technologyList: ['Team work', 'Design thinking', 'App Design'],
     firstButton: 'See Live',
     secondButton: 'See Design',
-    SeeLive: 'https://sphandanjalo.com/deesertgreen/index.html',
-    seeSource: 'https://www.figma.com/file/cqaYOAiigwpHWOOUZKpd1p/Desert-Green-Africa?node-id=0%3A1&t=YF33EXHdRNzehZiE-1'
+    SeeLive: 'https://www.figma.com/proto/tIVtfoBGy2QdzUl0g6crfb/MUB---29th-April-(Team-3)?type=design&node-id=9171-2423&t=9NBlxIGgiFhor0eu-1&scaling=scale-down&page-id=3140%3A3007&starting-point-node-id=9178%3A2917',
+    seeSource: '#'
   },
 
   {
