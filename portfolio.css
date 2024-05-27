@@ -106,20 +106,6 @@ a {
     cursor: pointer;
   }
 
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 37%;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-    margin-left: 10px;
-  }
-
   .next {
     right: 28px;
     border-radius: 3px 0 0 3px;
@@ -172,8 +158,8 @@ a {
     position: absolute;
     top: 65%;
     width: auto;
-    margin-top: -40px;
-    color: var(--secondary-color);
+    margin-top: -10%;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1.6rem;
     user-select: none;
@@ -181,13 +167,16 @@ a {
   }
 
   .next {
-    right: 13px;
+    right: 20px;
+  }
+
+  .prev{
+    left: 18px;
   }
 
   .next:hover,
   .prev:hover {
-    color: var(--secondary-color);
-    background: var(--primary-color);
+    background: var(--secondary-color);
     width: 20px;
     height: 36px;
     border-radius: 5px;

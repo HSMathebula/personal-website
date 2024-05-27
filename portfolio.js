@@ -2,115 +2,109 @@ const projects = [
   {
     id: 'card1',
     title: 'Finzen',
-    image1: './images/projects/finzen.png',
+    image1: './images/projects/persona.png',
+    image2: './images/projects/insghts.png',
+    image3: './images/projects/user-journey.png',
+    image4: './images/projects/design-thinking.png',
     description1:
-      'Desert Green is an Agritech start-up founded on the core-mission of tackling food insecurity challenges in the informal agri-value chain in Africa. We build mobile tech solutions to improve productivity, profits & livelihoods for Africa small-scale farmers & Informal traders while bringing youth back to farming.',
+      'Finzen was created to close a gap between young professionals who are looking to improve thier financial situation by providing them with a tailoered financial advice and services. The app was desinged to be user friendly and easy to navigate.',
     description2:
-      'Co-founded in 2015, formally registered in 2016, by 3 young entrepreneurs from different walks of life with 3 things in common: a rural upbringing, a passion for Agri-tech & a near-impossible vision for a self-sustaining connected Africa.',
+      'We were a team of 3 on a 2 weeks sprint program called MUB(make us better) at umuzi. We used figma for the design and we apply design thinking process to come up with the best solution for the problem. We empathise with the user by building a persona, conducted a survey, guardered insights, built a user journey map and ideated to come up with a suitable solution for the problem, then we created wireframes and a prototype. THE "See live" BUTTON WILL TAKE YOU TO THE PROTOTYPE OF THE APP.',
     technologyList: ['Team work', 'Design thinking', 'App Design'],
-    firstButton: 'See Live',
-    secondButton: 'See Design',
-    SeeLive: 'https://www.figma.com/proto/tIVtfoBGy2QdzUl0g6crfb/MUB---29th-April-(Team-3)?type=design&node-id=9171-2423&t=9NBlxIGgiFhor0eu-1&scaling=scale-down&page-id=3140%3A3007&starting-point-node-id=9178%3A2917',
-    seeSource: '#'
+    firstButton: 'Figma Prototype',
+    secondButton: 'MUB presentation',
+    SeeLive: 'https://www.figma.com/proto/tIVtfoBGy2QdzUl0g6crfb/MUB---29th-April-(Team-3)?type=design&node-id=9178-2917&t=j0QuG1Njqgd6OA9k-0&scaling=scale-down&page-id=3140%3A3007&starting-point-node-id=9178%3A2917',
+    seeSource: 'https://www.figma.com/proto/tIVtfoBGy2QdzUl0g6crfb/MUB---29th-April-(Team-3)?node-id=9333-461&t=ATBQVCAthCSlWR2i-0&scaling=contain&page-id=3130%3A7406&hide-ui=1'
   },
 
   {
     id: 'card2',
-    title: 'Movie Biskop',
-    image1: './images/movie-biskop.png',
-    image2: './images/latest-movies.png',
-    image3: './images/Genre.png',
-    image4: './images/Details.png',
+    title: 'In Pursuit Africa',
+    image1: './images/projects/inpursuit-desktop.png',
+    image2: './images/projects/inpursuit-desktop.png',
+    image3: './images/projects/inpursuit-desktop.png',
+    image4: './images/projects/inpursuit-desktop.png',
     description1:
-      'Biskop is a movie booking app that allows a user to signup and login. Add movies or book available movie from the list. This app was built with react redux for the frontend along with rails for backend.',
+      'I had the privilege of designing and developing the website for In Pursuit Africa, a dynamic platform dedicated to showcasing Africa’s unique stories, culture, and entrepreneurial spirit. My goal was to create a user-friendly, visually appealing, and informative website that effectively communicates the mission and vision of In Pursuit Africa. By crafting a clean and intuitive navigation structure, I ensured visitors could easily access the wealth of content available. The responsive design provides a seamless experience across all devices',
     description2:
-      '',
-    technologyList: ['Webside Design', 'Development', 'On page SEO'],
+      'I implemented SEO best practices to enhance the website’s visibility on search engines and optimized the website’s code and assets to ensure fast load times and optimal performance. website is built with WordPress.',
+    technologyList: ['Webside Design', 'WordPress', 'On page SEO'],
     firstButton: 'See Live',
-    secondButton: 'See Source',
-    SeeLive: 'https://exquisite-marigold-3a82c1.netlify.app/',
-    seeSource: 'https://github.com/HSMathebula/movie-booking-app-frontend'
+    secondButton: 'GitHub',
+    SeeLive: 'https://inpursuitafrica.co.za/wp/',
+    seeSource: 'https://github.com/HSMathebula/'
   },
 
   {
     id: 'card3',
-    title: 'Silector',
-    image1: './images/silector.png',
+    title: 'Desert Green',
+    image1: './images/projects/desertGreen-desktop.png',
+    image2: './images/projects/desert-green-about.png',
+    image3: './images/projects/desertGreen-mobileh.png',
+    image4: './images/projects/desertGreen-desktop.png',
     description1:
-      'Is a company base in eMalahleni klipfontein. We are fully complient to the industry regulations, weve been opararing since 2020 and have never failed to deliver what we promise. We offer a variety of services some are rear services round the city of eMalahleni.',
+      'I had the pleasure of designing and developing the website for Desert Green, a start-up farm tech company. Using HTML, CSS, and JavaScript, I created a visually appealing, responsive, and user-friendly platform that showcases Desert Green’s innovative solutions. Key features include a modern design, optimal performance across devices, and interactive elements to enhance user engagement.',
     description2:
-      '',
-    technologyList: ['UI Design', 'HTML/CSS', 'jQuery'],
+      'Additionally, I applied on-page SEO techniques to improve the website’s visibility and search engine ranking, driving more organic traffic to the site. The result is a professional and robust online presence that highlights Desert Green’s commitment to advancing agricultural technology.',
+    technologyList: ['UI Design', 'HTML/CSS', 'JavaScript'],
     firstButton: 'See Live',
-    secondButton: 'Source Code Not Available',
-    SeeLive: 'http://www.silector.co.za/index.html',
+    secondButton: 'GitHub',
+    SeeLive: 'https://desertgreen.co.za/',
     seeSource: 'https://github.com/HSMathebula'
   },
 
   {
     id: 'card4',
-    title: 'Leaderboard',
-    image2: './images/leaderboardUI.png',
-    image1: './images/leaderboardUI.png',
-    image3: './images/leaderboardUI.png',
-    image4: './images/leaderboardUI.png',
-    image5: './images/leaderboardUI.png',
-    image6: './images/leaderboardUI.png',
-    image7: './images/leaderboardUI.png',
-    image8: './images/leaderboardUI.png',
+    title: 'Movie Biskop',
+    image1: './images/projects/biskop1-01.png',
+    image2: './images/projects/biskop1-03.png',
+    image3: './images/projects/biskop1-02.png',
+    image4: './images/projects/biskop1-04.png',
     description1:
-      'The leaderboard is a board that shows the names and positions of the leading competitors in a competition. To see the names and scores Click <b>Refresh</b>',
+      'Movie Biskop is a personal project that I created to showcase my skills in web development. The website is designed to provide users with a platform to discover and explore a wide range of movies. Users can search for movies by genre, view movie details, and add movies to their favorites list. The website also features a user-friendly interface, responsive design, and interactive elements to enhance the user experience. I used React for frontend, and built the restful API with Ruby on Rails. I also used PostgresSQL for the database.',
     description2:
-      'This is a project from Microverse. Microverse is an online Full-stack software development programme that is fully remote, and global. I used HTML, CSS, JavaScript, Webpack, Jest for test, API, and other packages check the readme file by clicking <b>See Source</b> or <b>See Live</b> for the webside page.',
-    technologyList: ['HTML/CSS', 'Javascript', 'Webpack'],
+      '<b>Note<b> the backend is not hosted, so the website will not work as expected. However, you can view the source code on GitHub. I used unit testing to test the functionality of the website and for backend I used Rspec for testing.',
+    technologyList: ['React', 'Ruby on Rails', 'TDD & Rspec'],
     firstButton: 'See Live',
     secondButton: 'See Source',
-    SeeLive: 'https://hsmathebula.github.io/LeaderBoard/dist/',
-    seeSource: 'https://github.com/HSMathebula/LeaderBoard'
+    SeeLive: 'https://biskop.netlify.app/',
+    seeSource: 'https://github.com/HSMathebula/movie-booking-app-frontend'
   },
 
   {
     id: 'card5',
     class: 'mySlides',
-    title: 'ToDo List',
-    image1: './images/todolist-01.png',
-    image2: './images/todolist-01.png',
-    image3: './images/todolist-01.png',
-    image4: './images/todolist-01.png',
-    image5: './images/todolist-01.png',
-    image6: './images/todolist-01.png',
-    image7: './images/todolist-01.png',
-    image8: './images/todolist-01.png',
+    title: 'Learn With Us',
+    image1: './images/projects/sassts-mobile.png',
+    image2: './images/projects/Home-page.png',
+    image3: './images/projects/sassts-mobile.png',
+    image4: './images/projects/Home-page.png',
     description1:
-      'In this project I created a todo list that add a task, edit a task, complete tasks, delete task, and clear all completed tasks. Go to my git hub to see more projects.',
+      'Learn With Us is an online learning platform that I created to help students improve their programming skills. The platform offers a wide range of courses on Science, Technology, Engineering, and Mathematics (STEM) subjects, for students a cross all levels. The website features a clean and intuitive design, easy navigation, and interactive elements to enhance the learning experience. In this project I designed the UI/UX of the website and im currently helping with development. The website app is built with worldPress.',
     description2:
-      'I used HTML/CSS and JavaScript ES6 and I store the data to the local storage of the browser.',
-    technologyList: ['HTML/CSS', 'JavaScript', 'Local Starage'],
-    firstButton: 'See Live',
-    secondButton: 'See Source',
-    SeeLive: 'https://hsmathebula.github.io/To-Do-List-App/',
-    seeSource: 'https://github.com/HSMathebula/To-Do-List-App'
+      'Learn With Us is power by SASSTA and UNISA. I used figma for the UI and Illustrator for other graphics.',
+    technologyList: ['Figma', 'UI/UX Desing', 'Illustrator'],
+    firstButton: 'Figma Design',
+    secondButton: 'GitHub',
+    SeeLive: 'https://www.figma.com/design/5W7Nx6Qoxtgj1ICoq9HlVx/SAASTA?node-id=0-1&t=uyVT8ytbrMGr9GLG-1',
+    seeSource: 'https://github.com/HSMathebula'
   },
 
   {
     id: 'card6',
-    title: 'Other Projects and Concepts',
-    image1: './images/simplyLokhal-01.png',
-    image2: './images/wrc-01.png',
-    image3: './images/Ilead-01.png',
-    image4: './images/Logos-01.png',
-    image5: './images/simplyLokhal-01.png',
-    image6: './images/wrc-01.png',
-    image7: './images/Ilead-01.png',
-    image8: './images/Logos-01.png',
+    title: 'Silector',
+    image1: './images/projects/silector-desk3.png',
+    image2: './images/projects/silector-desk.png',
+    image3: './images/projects/silector-desk2.png',
+    image4: './images/projects/silector-desk3.png',
     description1:
-      'These are some of the designs I did for other people as a freelancer.',
+      'I developed the website for Silector, a company offering a variety of services, including a unique self-help service. Using HTML, CSS, and JavaScript, I created a user-friendly and engaging platform with a modern design and responsive layout, ensuring optimal performance across all devices. The website highlights Silector’s commitment to customer satisfaction, featuring a WhatsApp-based self-help service where users can ask questions about services or car-related problems they are experiencing with their "baby." Additionally, the site emphasizes Silector’s top-notch customer service, assuring users of the quality and reliability of their support.',
     description2:
-      'The designs ranges from logos, posters, brochures, etc. See Live and See Source are not available for this project.',
-    technologyList: ['Illutrator', 'Photoshop', 'Figma'],
+      '',
+    technologyList: ['HTML\CSS', 'JQuiry', 'On-Pages SEO'],
     firstButton: 'See Live',
-    secondButton: 'See Source',
-    SeeLive: '#',
+    secondButton: 'GitHub',
+    SeeLive: 'http://www.silector.co.za/',
     seeSource: 'https://github.com/HSMathebula'
   },
 ];
@@ -128,6 +122,11 @@ projects.forEach((project) => {
     </ul>
 
     <div>
+      <a href="${project.SeeLive}">${project.firstButton}<img src="./images/ic_link.png" alt="See live"></a>
+      <a href="${project.seeSource}">${project.secondButton}<img src="./images/ic_github_blue.png" alt="source-code"></a>
+    </div>
+
+    <div>
       <img class="mySlides" src="${project.image1}" alt="project img">
       <img class="mySlides" src="${project.image2}" alt="project img">
       <img class="mySlides" src="${project.image3}" alt="project img">
@@ -136,10 +135,6 @@ projects.forEach((project) => {
 
     <p>${project.description1}</p>
     <p>${project.description2}</p>
-    <div>
-      <a href="${project.SeeLive}">${project.firstButton}<img src="./images/ic_link.png" alt="See live"></a>
-      <a href="${project.seeSource}">${project.secondButton}<img src="./images/ic_github_blue.png" alt="source-code"></a>
-    </div>
   `; 
 });
 
@@ -164,6 +159,15 @@ seeProjectButtons.forEach((button) => {
                   </ul>
                 </div>
               </div>
+
+              <div class="bottom-div">
+                <p class="p-tag">${project.description1}</p>
+                <p class="p-tag">${project.description2}</p>
+                <div class="cta-1">
+                    <a href="${project.SeeLive}" class="see-live" target="_blank">${project.firstButton}</a>
+                    <a href="${project.seeSource}" class="source-code" target="_blank">${project.secondButton}</a>
+                </div>
+              </div><br><br>
           
               <div class="md-div">
                 <div class="container1">
@@ -183,15 +187,6 @@ seeProjectButtons.forEach((button) => {
                       
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                </div>
-          
-                <div class="bottom-div">
-                  <p class="p-tag">${project.description1}</p>
-                  <p class="p-tag">${project.description2}</p>
-                  <div class="cta-1">
-                      <a href="${project.SeeLive}" class="see-live">See live</a>
-                      <a href="${project.seeSource}" class="source-code">Source code</a>
                   </div>
                 </div>
               </div>
