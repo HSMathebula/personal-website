@@ -9,7 +9,7 @@ const projects = [
     description1:
       'Finzen was created to close a gap between young professionals who are looking to improve thier financial situation by providing them with a tailoered financial advice and services. The app was desinged to be user friendly and easy to navigate.',
     description2:
-      'We were a team of 3 on a 2 weeks sprint program called MUB(make us better) at umuzi. We used figma for the design and we apply design thinking process to come up with the best solution for the problem. We empathise with the user by building a persona, conducted a survey, guardered insights, built a user journey map and ideated to come up with a suitable solution for the problem, then we created wireframes and a prototype. THE "See live" BUTTON WILL TAKE YOU TO THE PROTOTYPE OF THE APP.',
+      'We were a team of 3 on a 2 weeks sprint program called MUB(make us better) at Umuzi a fully remote instution that trains top talent for digital roles at leading employers. We used figma for the design and we apply design thinking process to come up with the best solution for the problem. We empathise with the user by building a persona, conducted a survey, guardered insights, built a user journey map and ideated to come up with a suitable solution for the problem, then we created wireframes and a prototype. You can view the prototype and or slideshow presentation taking you throught our design thinking process.',
     technologyList: ['Team work', 'Design thinking', 'App Design'],
     firstButton: 'Figma Prototype',
     secondButton: 'MUB presentation',
@@ -82,12 +82,12 @@ const projects = [
     description1:
       'Learn With Us is an online learning platform that I created to help students improve their programming skills. The platform offers a wide range of courses on Science, Technology, Engineering, and Mathematics (STEM) subjects, for students a cross all levels. The website features a clean and intuitive design, easy navigation, and interactive elements to enhance the learning experience. In this project I designed the UI/UX of the website and im currently helping with development. The website app is built with worldPress.',
     description2:
-      'Learn With Us is power by SASSTA and UNISA. I used figma for the UI and Illustrator for other graphics.',
+      'Learn With Us is powered by SASSTA and UNISA. I used figma for the UI and Illustrator for other graphics.',
     technologyList: ['Figma', 'UI/UX Desing', 'Illustrator'],
     firstButton: 'Figma Design',
-    secondButton: 'GitHub',
+    secondButton: 'Behance',
     SeeLive: 'https://www.figma.com/design/5W7Nx6Qoxtgj1ICoq9HlVx/SAASTA?node-id=0-1&t=uyVT8ytbrMGr9GLG-1',
-    seeSource: 'https://github.com/HSMathebula'
+    seeSource: 'https://www.behance.net/gallery/178417635/Learn-With-Us'
   },
 
   {
@@ -153,9 +153,9 @@ seeProjectButtons.forEach((button) => {
                 <div class="title-list">
                   <h2 class="title">${project.title}</h2>
                   <ul class="skills">
-                      <li class="skills-list">${project.technologyList[0]}</li>
-                      <li class="skills-list">${project.technologyList[1]}</li>
-                      <li class="skills-list">${project.technologyList[2]}</li>
+                      <li class="skills-list std-border1">${project.technologyList[0]}</li>
+                      <li class="skills-list std-border1">${project.technologyList[1]}</li>
+                      <li class="skills-list std-border1">${project.technologyList[2]}</li>
                   </ul>
                 </div>
               </div>
@@ -164,8 +164,8 @@ seeProjectButtons.forEach((button) => {
                 <p class="p-tag">${project.description1}</p>
                 <p class="p-tag">${project.description2}</p>
                 <div class="cta-1">
-                    <a href="${project.SeeLive}" class="see-live" target="_blank">${project.firstButton}</a>
-                    <a href="${project.seeSource}" class="source-code" target="_blank">${project.secondButton}</a>
+                    <a href="${project.SeeLive}" class="see-live std-border" target="_blank">${project.firstButton}</a>
+                    <a href="${project.seeSource}" class="source-code std-border" target="_blank">${project.secondButton}</a>
                 </div>
               </div><br><br>
           

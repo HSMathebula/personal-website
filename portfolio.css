@@ -188,6 +188,13 @@ a {
     visibility: visible;
   }
 
+  .std-border {
+    border-radius: 5px;
+  }
+
+  .std-border1 {
+    border-radius: 4px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

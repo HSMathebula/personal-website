@@ -210,6 +210,7 @@ a {
     background-color: var(--primary-color);
     padding: 10px 0;
     border-radius: 5px;
+    border: none;
     cursor: pointer;
     margin: 30px 0 0 0;
     gap: 20px;
@@ -408,18 +409,6 @@ a {
     padding-top: 10px;
   }
 
-  .float-input:focus + .float-label,
-  .float-input:not(:placeholder-shown) + .float-label {
-    display: none;
-  }
-
-  textarea:focus,
-  textarea:hover,
-  input:focus,
-  input:hover {
-    border: 1px solid var(--primary-color);
-  }
-
   /* footer section */
 
   .footer-section {
@@ -464,7 +453,7 @@ a {
   }arrow right
   
 
-  a:hover {
+  a:hover, .btn1:hover {
     font-weight: bold;
   }
 }
@@ -806,7 +795,7 @@ a {
 
   .project-button:hover {
     background: #608383;
-    border: none;
+    border: 1px solid #608383;
   }
 }
 
