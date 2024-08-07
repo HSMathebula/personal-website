@@ -796,6 +796,7 @@ a {
   .project-button:hover {
     background: #608383;
     border: 1px solid #608383;
+    cursor: pointer;
   }
 }
 
