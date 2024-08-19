@@ -22,39 +22,69 @@ nav.addEventListener('click', () => {
 });
 
 // form
-function validation() {
+// function validation() {
+//   const form = document.getElementById('form');
+//   const name = form.elements.name.value;
+//   const email = form.elements.email.value;
+//   const message = form.elements.message.value;
+//   const alert = document.getElementById('alert');
+//   alert.innerHTML = '';
+
+//   form.addEventListener('submit', (event) => {
+//     if (name.length < 1 && name === undefined && email < 1
+//       && email === undefined && email !== email.toLowerCase()
+//       && message.length < 5 && message === undefined) {
+//       event.preventDefault();
+//       alert.innerHTML = '* Make sure you fill all the input fields. form not sent.';
+//     } else if (email !== email.toLowerCase()) {
+//       event.preventDefault();
+//       alert.innerHTML = '* Make sure your email is in lower case. form not sent.';
+//     } else if (message.length < 5 || message === undefined) {
+//       event.preventDefault();
+//       alert.innerHTML = '* Text area should have at least 5 characters. form not sent.';
+//     } else if (name.length < 1 || name === undefined) {
+//       event.preventDefault();
+//       alert.innerHTML = '* Make sure you fill your name. Form not sent.';
+//     } else if (message.length > 250) {
+//       event.preventDefault();
+//       alert.innerHTML = '* exceeded maximum number of caracters (250). Form not sent';
+//     } else {
+//       form.submit();
+//     }
+//   });
+// }
+function validate(event) {
   const form = document.getElementById('form');
-  const name = form.elements.name.value;
-  const email = form.elements.email.value;
-  const message = form.elements.message.value;
+  const name = form.elements.name.value.trim();
+  const email = form.elements.email.value.trim();
+  const message = form.elements.message.value.trim();
   const alert = document.getElementById('alert');
   alert.innerHTML = '';
 
-  form.addEventListener('submit', (event) => {
-    if (name.length < 1 && name === undefined && email < 1
-      && email === undefined && email !== email.toLowerCase()
-      && message.length < 5 && message === undefined) {
-      event.preventDefault();
-      alert.innerHTML = '* Make sure you fill all the input fields. form not sent.';
-    } else if (email !== email.toLowerCase()) {
-      event.preventDefault();
-      alert.innerHTML = '* Make sure your email is in lower case. form not sent.';
-    } else if (message.length < 5 || message === undefined) {
-      event.preventDefault();
-      alert.innerHTML = '* Text area should have at least 5 characters. form not sent.';
-    } else if (name.length < 1 || name === undefined) {
-      event.preventDefault();
-      alert.innerHTML = '* Make sure you fill your name. Form not sent.';
-    } else if (message.length > 250) {
-      event.preventDefault();
-      alert.innerHTML = '* exceeded maximum number of caracters (250). Form not sent';
-    } else {
-      form.submit();
-    }
-  });
+  if (!name) {
+    event.preventDefault();
+    alert.innerHTML = '* Make sure you fill your name. Form not sent.';
+  } else if (!email) {
+    event.preventDefault();
+    alert.innerHTML = '* Make sure you fill your email. Form not sent.';
+  } else if (email !== email.toLowerCase()) {
+    event.preventDefault();
+    alert.innerHTML = '* Make sure your email is in lower case. Form not sent.';
+  } else if (!message || message.length < 5) {
+    event.preventDefault();
+    alert.innerHTML = '* Text area should have at least 5 characters. Form not sent.';
+  } else if (message.length > 250) {
+    event.preventDefault();
+    alert.innerHTML = '* Exceeded maximum number of characters (250). Form not sent.';
+  } else {
+    form.submit();
+  }
 }
 
-validation();
+// Adding the event listener once
+document.getElementById('form').addEventListener('submit', validate);
+
+// validation();
 
 // local storage
 // get inputs and radio/checkbox buttons

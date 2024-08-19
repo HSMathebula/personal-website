@@ -110,7 +110,7 @@ const projects = [
 ];
 
 const section = document.querySelector('.main-container');
-projects.forEach((project) => {
+projects.forEach((project, index) => {
   const div = document.createElement('div');
   div.className = 'project-card';
   div.innerHTML = `
@@ -122,15 +122,17 @@ projects.forEach((project) => {
     </ul>
 
     <div>
-      <a href="${project.SeeLive}">${project.firstButton}<img src="./images/ic_link.png" alt="See live"></a>
-      <a href="${project.seeSource}">${project.secondButton}<img src="./images/ic_github_blue.png" alt="source-code"></a>
+      <a href="${project.SeeLive}">${project.firstButton}<img src="./images/ic_link_blue.png" alt="See live"></a>
+      <a href="${project.seeSource}">${project.secondButton}<img src="./images/ic-github.svg" alt="source-code"></a>
     </div>
 
-    <div>
-      <img class="mySlides" src="${project.image1}" alt="project img">
-      <img class="mySlides" src="${project.image2}" alt="project img">
-      <img class="mySlides" src="${project.image3}" alt="project img">
-      <img class="mySlides" src="${project.image4}" alt="project img">
+    <div class="slideshow-container">
+      <img class="mySlides slide-${index}" src="${project.image1}" style="display:block;" alt="project img">
+      <img class="mySlides slide-${index}" src="${project.image2}" alt="project img">
+      <img class="mySlides slide-${index}" src="${project.image3}" alt="project img">
+      <img class="mySlides slide-${index}" src="${project.image4}" alt="project img">
+      <a class="prev" onclick="plusSlides(-1, ${index})">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, ${index})">&#10095;</a>
     </div>
 
     <p>${project.description1}</p>
@@ -200,6 +202,8 @@ seeProjectButtons.forEach((button) => {
         span.addEventListener('click', () => {
           section.removeChild(popUpSection);
         });
+
+        const slides = document.querySelectorAll('.mySlides');
         showSlides();
       });
     }
@@ -207,29 +211,29 @@ seeProjectButtons.forEach((button) => {
 });
 
 let slideIndex = 1;
-showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  if(n > 0) {showSlides(slideIndex = n);}
 }
 function showSlides(n) {
-  let i;
   let slides = document.querySelectorAll(".mySlides");
-  let dots = document.querySelectorAll(".demo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  if (slides.length === 0) {
+    return;
   }
 
-  if(slides != true && dots != true){
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  slides.forEach(slide => slide.style.display = "none");
+
+  if(slides != true){
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
   }
 }
+setTimeout(() => {
+  showSlides(slideIndex);
+}, 1000);

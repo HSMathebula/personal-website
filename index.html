@@ -266,13 +266,13 @@
                     <p class="para">
                         Feel free to reach out by filling out the form. I'd love to have a chat and see what we can create together! 😊.
                     </p>
-                    <form class="form-input" action="https://formspree.io/f/xyyodjya" method="post">
+                    <form id="form" name="form" class="form-input" action="https://formspree.io/f/xyyodjya" method="post">
                         <div class="name-email">
                             <div class="float-container fc">
                                 <input type="text" id="name" name="name" maxlength="30" class="float-input" placeholder="Name" required>
                             </div>
                             <div class="float-container fc">
-                                <input type="email" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$" class="float-input" placeholder="Email" required>
+                                <input type="email" id="email" name="email" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,6}$" class="float-input" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="float-container">
@@ -282,6 +282,7 @@
                     </form>
                 </div>
             </div>
+            <div id="alert"></div>
         </section>
     
         <footer class="footer-section">
