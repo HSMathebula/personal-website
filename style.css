@@ -543,41 +543,42 @@ a {
     font-size: 1.8rem;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-rows: min-content;
+  }
+
   .row1 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin-top: 50px;
-    padding-right: 16px;
-    position: relative;
   }
 
   .row2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     align-items: baseline;
-    padding-right: 16px;
-    position: relative;
+  }
+
+  .top-space {
+    height: 85%!important;
   }
 
   .row3 {
-    display: flex;
-    padding-right: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     height: inherit;
     gap: 20px;
   }
 
   .row4 {
-    display: flex;
-    padding-right: 16px;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: -3px;
   }
 
   .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10 {
     position: relative;
-  }
-
-  .item1 {
-    width: 40%;
-    display: flex;
   }
 
   .dots2 {
@@ -606,7 +607,7 @@ a {
 
   .item2 {
     margin-bottom: 0;
-    width: 80%;
+    width: 100%;
   }
 
   .item6 {
@@ -619,7 +620,13 @@ a {
   }
 
   .item9-img2 {
-    width: 25%;
+    width: 30%;
+    height: fit-content;
+  }
+
+  .item9-img1 {
+    width: 50%;
+    height: fit-content;
   }
 
   .row3 {
@@ -629,7 +636,7 @@ a {
   .row3-column {
     display: flex;
     flex-direction: column;
-    width: 54%;
+    width: 100%;
   }
 
   .row3-column .item8 {
@@ -637,7 +644,7 @@ a {
   }
 
   .item4-div {
-    width: 90%;
+    width: 100%;
   }
 
   .item4 img{
@@ -700,10 +707,10 @@ a {
   }
 
   .art-row3 {
-    width: 110%;
-    height: 110%;
-    margin-top: -25px;
-    margin-left: -27px;
+    width: 101%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: -20px;
   }
 
   /* about */
@@ -713,8 +720,10 @@ a {
   }
 
   .profile-row {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr auto;
     width: 100%;
     position: relative;
   }
@@ -816,13 +825,9 @@ a {
     padding-left: 35px;
   }
 
-  .art-row3 {
-    margin-top: -30px;
-  }
-
-  .item9-img2 {
+  /* .item9-img2 {
     width: 20%; 
-  }
+  } */
 
   .about-container {
     gap: 60px;

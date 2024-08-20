@@ -38,7 +38,7 @@
                 <h1 class="tittle h1">Sipho Mathebula</h1>
                 <p class="para">Hey there! I'm an aspiring Full-stack software developer and Graphic designer with a solid 2 years of experience and a sprinkle of extra on both spaces. I speak good JavaScript, React, Redux, Ruby, Rails, WordPress, CSS, Adobe Creative Suite, Figma, and more tech lingo. I live for bringing designs to life on the web and crafting simplistic yet stunning visuals. Check out some of my work, and don't be shy—drop me a message! 😊
                 </p>
-                <a href="#form-id" class="btn1">Hello<i>👋</i></a>
+                <a href="#form-id" class="btn1">Contact Me<i>👋</i></a>
             </div>
             <div class="big-bg"></div>
         </section>
@@ -73,7 +73,7 @@
                 </div>
     
                 <div class="row2">
-                    <article class="item3">
+                    <article class="item3 top-space">
                         <img class="card-img" src="./images/projects/inpursuit-01.png" alt="In Pursuit Africa">
                         <div class="card-info">
                             <h3 class="project-tittle">In Pursuit Africa</h3>
@@ -96,7 +96,7 @@
                         <div class="item4 visibility"><img src="./images/image-geometry_2.svg" alt=""></div>
                     </div>
         
-                    <article class="item5">
+                    <article class="item5 top-space">
                         <img class="card-img" src="./images/projects/desert-green-01.png" alt="Desert Green">
                         <div class="card-info">
                             <h3 class="project-tittle">Desert Green Africa</h3>
@@ -162,7 +162,7 @@
     
                 <div class="row4">
                     <div class="item9 visibility">
-                        <img class=".item9-img1" src="./images/image-geometry_5.png" alt="">
+                        <img class="item9-img1" src="./images/image-geometry_5.png" alt="">
                         <img class="item9-img2" src="./images/image-geometry_4.png" alt="">
                     </div>
         
@@ -266,13 +266,13 @@
                     <p class="para">
                         Feel free to reach out by filling out the form. I'd love to have a chat and see what we can create together! 😊.
                     </p>
-                    <form class="form-input" action="https://formspree.io/f/xyyodjya" method="post">
+                    <form id="form" name="form" class="form-input" action="https://formspree.io/f/xyyodjya" method="post">
                         <div class="name-email">
                             <div class="float-container fc">
                                 <input type="text" id="name" name="name" maxlength="30" class="float-input" placeholder="Name" required>
                             </div>
                             <div class="float-container fc">
-                                <input type="email" id="email" name="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$" class="float-input" placeholder="Email" required>
+                                <input type="email" id="email" name="email" pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,6}$" class="float-input" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="float-container">
@@ -282,6 +282,7 @@
                     </form>
                 </div>
             </div>
+            <div id="alert"></div>
         </section>
     
         <footer class="footer-section">
